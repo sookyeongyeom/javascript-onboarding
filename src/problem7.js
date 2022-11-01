@@ -59,6 +59,8 @@ function problem7(user, friends, visitors) {
     if (scoreA === scoreB) return a.charCodeAt(0) - b.charCodeAt(0);
     else scoreB - scoreA;
   }
+
+  return recommendUsersName.sort(sortByScores);
 }
 
 module.exports = problem7;
